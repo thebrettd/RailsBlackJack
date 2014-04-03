@@ -1,0 +1,12 @@
+<h1>Start new game</h1>
+
+<%= form_for :game, url: games_path do |f| %>
+    <p>
+      <%= f.label 'Enter your name' %><br>
+      <%= f.text_field :player_name %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
